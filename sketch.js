@@ -8,6 +8,7 @@ function preload() {
   // console.log(url_string);
   var chapter = url_string.replace("/", "");
   chapter = chapter.replace(".html", "");
+  chapter = chapter.replace("COMPLEXARTIFACTSTUDIOMOCKUP-template/", "");
   console.log(chapter);
   dialog = loadTable("./assets/" + chapter + "dialog.csv", 'csv');
   choice = loadTable("./assets/" + chapter + "choice.csv", 'csv');
