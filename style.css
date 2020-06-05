@@ -1,0 +1,44 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+  user-select: none;
+  -moz-user-select: none;
+}
+
+.dialogBox {
+    /* this is the style of the dialog Box */
+  margin-top: 0;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+}
+
+.choiceBox {
+  /* this is the style of the choice Box after dialog ends in this page*/
+  display: none;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+
+.buttonChoice {
+  /* this is the style of the buttons in the choice Box */
+}
+
+#character {
+    /* this is the style of the character Label */
+  margin: 10px;
+}
+
+#dialog {
+  /* this is the style of the actor's lines */
+  margin: 10px;
+  height: 20vh;
+}
