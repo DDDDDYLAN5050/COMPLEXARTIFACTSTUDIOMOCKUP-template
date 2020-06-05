@@ -1,7 +1,7 @@
 let dialog, dialogBox;
 let choice, choiceBox;
 var numLine;
-var n = 0;
+var n = 1;
 var url_string = window.location.pathname;
 
 function preload() {
@@ -17,18 +17,27 @@ function preload() {
 function setup() {
   noCanvas();
   numLine = dialog.getRowCount();
-  print(numLine + ' total rows in table');
+  print(numLine + ' total lines in dialog');
   dialogBox = select(".dialogBox");
   dialogBox.mouseClicked(dialogClicked);
   choiceBox = select(".choiceBox");
+
   // choiceBox.hide();
 }
 
 function dialogClicked() {
   if (n < numLine) {
+
     print(n);
     document.getElementById("dialog").innerHTML = dialog.getString(n, 1);
     document.getElementById("character").innerHTML = dialog.getString(n, 0);
+    var character = dialog.getString(n, 0);
+    var characterImg = '<img src="./assets/character/' + character + '.png" alt="' + character + '" height="100%" width="auto">';
+    select(".characterImg").html(characterImg);
+
+    var background = dialog.getString(n, 2);
+    var backgroundImg = '<img src="./assets/background/' + background + '.png" alt="' + background + '" height="100%" width="100%">';
+    select(".backgroundImg").html(backgroundImg);
     n++;
   } else if (n == numLine) {
     print("make choice");
@@ -39,6 +48,9 @@ function dialogClicked() {
       var button = '</br><input type="button" class="buttonChoice" value="' + value + '" onclick="window.location.href = ' + "'" + './' + jump2where + '.html' + "'" + '"/>';
       select(".choiceBox").html(button, true);
     }
+    select("#dialog").hide();
+    select("#character").hide();
+    select(".characterImg").hide();
     n++;
   }
 }
