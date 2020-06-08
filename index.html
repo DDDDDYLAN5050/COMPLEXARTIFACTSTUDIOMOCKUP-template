@@ -1,33 +1,105 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
-  <style>
-    body {
-      padding: 0;
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    .START_GAME {
-      display: absolute;
-      left: 50%;
-      top: 50%;
-      margin-left: -width/2;
-      margin-top: -height/2;
-      text-align: center;
-      vertical-align: middle;
-      margin: auto;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
-<body>
-  <!-- index.html is the homepage of our game  -->
-  <!-- game start button -->
-  <button class="START_GAME" onclick="window.location.href = './1.1.html'">START GAME</button>
+<body class="splashScreen">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="jumbotron mt-5">
+        <h2> Hello, world! </h2>
+        <p> Some introduction. </p>
+        <p>
+          <a class="btn btn-primary btn-large" href="#">Instructions</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card mb-5 text-center">
+           <div class="card-header"><h5 class="card-title font-weight-bolder">Planet Circuit</h5></div>
+        <img src="assets/planets/circuit.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">This is a short description of a planet. Click on the button to find out more.</p>
+        </div>
+           <div class="card-footer">
+          <a class="btn btn-primary btn-small" href="#">More…</a>
+        </div>
+      </div>
+       <div class="card mb-5 text-center">
+           <div class="card-header"><h5 class="card-title font-weight-bolder">Planet Furnace</h5></div>
+        <img src="assets/planets/furnace.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">This is a short description of a planet. Click on the button to find out more.</p>
+        </div>
+           <div class="card-footer">
+          <a class="btn btn-primary btn-small" href="#">More…</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+       <div class="card mb-5 text-center">
+           <div class="card-header"><h5 class="card-title font-weight-bolder">Planet Gate</h5></div>
+        <img src="assets/planets/gate.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">This is a short description of a planet. Click on the button to find out more.</p>
+        </div>
+           <div class="card-footer">
+          <a class="btn btn-primary btn-small" href="#">More…</a>
+        </div>
+      </div>
+       <div class="card mb-5 text-center">
+           <div class="card-header"><h5 class="card-title font-weight-bolder">Planet Metallum</h5></div>
+        <img src="assets/planets/metallum.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">This is a short description of a planet. Click on the button to find out more.</p>
+        </div>
+           <div class="card-footer">
+          <a class="btn btn-primary btn-small" href="#">More…</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+       <div class="card mb-5 text-center">
+           <div class="card-header"><h5 class="card-title font-weight-bolder">Planet Uprise</h5></div>
+        <img src="assets/planets/uprise.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">This is a short description of a planet. Click on the button to find out more.</p>
+        </div>
+           <div class="card-footer">
+          <a class="btn btn-primary btn-small" href="#">More…</a>
+        </div>
+      </div>
+       <div class="card mb-5 text-center">
+           <div class="card-header"><h5 class="card-title font-weight-bolder">Planet Woodland</h5></div>
+        <img src="assets/planets/woodland.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">This is a short description of a planet. Click on the button to find out more.</p>
+        </div>
+           <div class="card-footer">
+          <a class="btn btn-primary btn-small" href="#">More…</a>
+        </div>
+      </div>
+    </div>
+      
+  </div>
+      <div class="row">
+    <div class="col-md-12">
+      <div class="jumbotron text-center">
+       
+          <a class="btn btn-danger btn-large" href="1.1.html">Start</a>
+   
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
-
 </html>

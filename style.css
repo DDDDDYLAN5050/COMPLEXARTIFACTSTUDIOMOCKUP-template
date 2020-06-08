@@ -1,66 +1,91 @@
+@font-face {
+  font-family: 'SequentialistBB';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_1_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_0_0.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
 body {
+    height: 100vh;
   padding: 0;
   margin: 0;
-  font-size: 2rem;
-  user-select: none;
-  -moz-user-select: none;
-  overflow: scroll;
-  overflow-y: hidden;
+/*  overflow: scroll;
+  overflow-y: hidden;*/
+background-size: cover; 
+    background-repeat: no-repeat;
+  font-family: SequentialistBB;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */ ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */ ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/* Handle on hover */ ::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
+.splashScreen {
+    background-image: url("assets/background/planets-01.png");
+    background-size: cover;
+    background-repeat:no-repeat; 
+    height: 100vh;
+}
+
+.splashScreen .card {
+    background-color: rgba(0,0,0,0.6);
+}
+.splashScreen .card-header {
+    background-color: rgba(255,255,255,1);
+}
+.splashScreen .card-body {
+    background-color: rgba(255,255,255,1);
+}
+.splashScreen .card-footer {
+    background-color: rgba(255,255,255,1);
+}
+
+.characterContainer {
+  position: absolute;
+  right: 30%;
+  bottom: 0%;
+}
 .dialogBox {
-  /* this is the style of the dialog Box */
-  background-color: rgba(64, 64, 64, 0.7);
-  margin-top: 0;
-  margin-bottom: 5%;
-  margin-left: 10%;
-  margin-right: 10%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  cursor: pointer;
+}
+.dialogBox:after {
+  content: '';
   position: absolute;
   bottom: 0;
-  width: 80%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: #ffffff;
+  border-bottom: 0;
+  margin-left: -20px;
+  margin-bottom: -20px;
 }
-
-.OuterChoicebox {
-  text-align: center;
+#dialog {
+  height: 100px;
+  overflow-y: scroll;
+  padding-right: 12px;
+}
+.choiceContainer {
   position: absolute;
-  top: 40%;
-  width: 100%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
 }
-
 .choiceBox {
   /* this is the style of the choice Box after dialog ends in this page*/
-  background-color: rgba(128, 128, 128, 0.7);
   display: none;
-  text-align: center;
-  width: auto;
 }
-
 .buttonChoice {
   /* this is the style of the buttons in the choice Box */
-}
-
-.backgroundImg {
-  width: 100vw;
-  height: auto;
-}
-
-.characterImg {
-  position: absolute;
-  margin-left: 50%;
-  bottom: 5%;
-  height: 80vh;
-  width: auto;
-}
-
-#character {
-  /* this is the style of the character Label */
-  color: white;  
-  margin: 10px;
-}
-
-#dialog {
-  /* this is the style of the actor's lines */
-  background-color: rgba(255, 255, 255, 0.7);
-  margin: 10px;
-  height: 20vh;
 }

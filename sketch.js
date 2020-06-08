@@ -9,7 +9,7 @@ function preload() {
   var chapter = url_string.replace("/", "");
   chapter = chapter.replace(".html", "");
   chapter = chapter.replace("COMPLEXARTIFACTSTUDIOMOCKUP-template/", "");
-  console.log(chapter);
+  console.log("Chapter: " + chapter);
   dialog = loadTable("./assets/" + chapter + "dialog.csv", 'csv');
   choice = loadTable("./assets/" + chapter + "choice.csv", 'csv');
 
@@ -22,6 +22,7 @@ function setup() {
   dialogBox = select(".dialogBox");
   dialogBox.mouseClicked(dialogClicked);
   choiceBox = select(".choiceBox");
+  dialogClicked();
 
   // choiceBox.hide();
 }
@@ -37,7 +38,7 @@ function dialogClicked() {
     select(".characterImg").html(characterImg);
 
     var background = dialog.getString(n, 2);
-    var backgroundImg = '<img src="./assets/background/' + background + '.png" alt="' + background + '" height="100%" width="100%">';
+    var backgroundImg = "<style> body{background-image: url('assets/background/" + background + ".png');} </style>";
     select(".backgroundImg").html(backgroundImg);
     n++;
   } else if (n == numLine) {
@@ -46,7 +47,7 @@ function dialogClicked() {
     for (i = 1; i < choice.getRowCount(); i++) {
       var value = choice.getString(i, 1);
       var jump2where = choice.getString(i, 2);
-      var button = '</br><input type="button" class="buttonChoice" value="' + value + '" onclick="window.location.href = ' + "'" + './' + jump2where + '.html' + "'" + '"/>';
+      var button = '</br><input type="button" class="buttonChoice btn btn-primary mb-5" value="' + value + '" onclick="window.location.href = ' + "'" + './' + jump2where + '.html' + "'" + '"/>';
       select(".choiceBox").html(button, true);
     }
     select("#dialog").hide();

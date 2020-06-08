@@ -1,28 +1,28 @@
 Character,Dialog,background
-Menodora,"Hi, Alex! You got injured during experimentation on your university lab, and unfortunately, you lost your leg. ",hospital
-Menodora,But you build it with recycling material. ,hospital
-Menodora,And that is when we met! ,hospital
-Menodora,"My wife, Laura, is sick from the pollution on the outer planets, and I had this idea a while ago of a circular economy system where the waste is recycling correctly. ",hospital
-Menodora,And when I saw you at the hospital full of new ideas and energy I asked you to join me on this adventure! ,hospital
-Menodora,"You finally came up with a blueprint, and now it is time to pitch to some people that could also help us. (connect to what we already have)",hospital
-Doctor,"Hi there, how are you feeling? ",hospital
-Doctor,You did a very good job on your legs; ,hospital
-Doctor,we could successfully transplant them to your body. ,hospital
-Doctor,I heard that you invented these prostheses by yourself. ,hospital
-Doctor,Very nice! ,hospital
-Doctor,"Anyways, before you can leave tomorrow, please sign here",hospital
-You,What happens to her?,hospital
-Menodora,"Laura is my wife, she works at one of the recycling platforms. ",hospital
-Menodora,I think the trash is poisoning her. ,hospital
-Menodora,May I ask where you got these legs?,hospital
-You,I build them. It's an invention made of trash.,hospital
-Menodora,"Oh, so clever.",hospital
-Menodora,"I have this plan for a while now, but now seeing Laura's sickness, ",hospital
-Menodora,I'm even more determined to do it. ,hospital
-Menodora,It's about having a more environmentally friendly economy for the inner and outer planets.,hospital
-You,"I'm a huge fan of recycling resources, as you cansee from my leg.",hospital
-Menodora,I see... but you are thinking too small. I'm looking for someone with your skills to help me.,hospital
-You,Could you tell me more about your plans?,hospital
-Menodora,"All the trash produced in the inner planets goes to the landfills at the outer, and several people rely on recycling this trash incorrectly to live.  ",hospital
-Menodora,"You see how Laura is sick, and the cause is the trash from the inner planets. ",hospital
-Menodora,"Unfortunately,  Laura isn't the only one. ",hospital
+Menodora,"Hi, Alex! You got injured during experimentation on your university lab, and unfortunately, you lost your leg. ",hospital-01
+Menodora,But you build it with recycling material.,hospital-01
+Menodora,And that is when we met!,hospital-01
+Menodora,"My wife, Laura, is sick from the pollution on the outer planets, and I had this idea a while ago of a circular economy system where the waste is recycling correctly. ",hospital-01
+Menodora,And when I saw you at the hospital full of new ideas and energy I asked you to join me on this adventure!,hospital-01
+Menodora,"You finally came up with a blueprint, and now it is time to pitch to some people that could also help us. (connect to what we already have)",hospital-01
+Doctor,"Hi there, how are you feeling? ",hospital-01
+Doctor,You did a very good job on your legs;,hospital-01
+Doctor,we could successfully transplant them to your body.,hospital-01
+Doctor,I heard that you invented these prostheses by yourself.,hospital-01
+Doctor,Very nice!,hospital-01
+Doctor,"Anyways, before you can leave tomorrow, please sign here",hospital-01
+You,What happens to her?,hospital-01
+Menodora,"Laura is my wife, she works at one of the recycling platforms. ",hospital-01
+Menodora,I think the trash is poisoning her.,hospital-01
+Menodora,May I ask where you got these legs?,hospital-01
+You,I build them. It's an invention made of trash.,hospital-01
+Menodora,"Oh, so clever.",hospital-01
+Menodora,"I have this plan for a while now, but now seeing Laura's sickness, ",hospital-01
+Menodora,I'm even more determined to do it.,hospital-01
+Menodora,It's about having a more environmentally friendly economy for the inner and outer planets.,hospital-01
+You,"I'm a huge fan of recycling resources, as you cansee from my leg.",hospital-01
+Menodora,I see... but you are thinking too small. I'm looking for someone with your skills to help me.,hospital-01
+You,Could you tell me more about your plans?,hospital-01
+Menodora,"All the trash produced in the inner planets goes to the landfills at the outer, and several people rely on recycling this trash incorrectly to live.  ",hospital-01
+Menodora,"You see how Laura is sick, and the cause is the trash from the inner planets. ",hospital-01
+Menodora,"Unfortunately,  Laura isn't the only one. ",hospital-01
