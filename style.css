@@ -4,15 +4,14 @@
   font-style: normal;
   font-weight: 400;
 }
-body {
+body, html {
     height: 100vh;
   padding: 0;
   margin: 0;
-/*  overflow: scroll;
-  overflow-y: hidden;*/
 background-size: cover; 
     background-repeat: no-repeat;
   font-family: SequentialistBB;
+    cursor: url("assets/curser.svg");
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -27,11 +26,14 @@ background-size: cover;
   background: #555;
 }
 
+.splashScreen body {
+    overflow-y: scroll !important;
+}
+
 .splashScreen {
     background-image: url("assets/background/planets-01.png");
     background-size: cover;
     background-repeat:no-repeat; 
-    height: 100vh;
 }
 
 .splashScreen .card {
@@ -52,11 +54,17 @@ background-size: cover;
   right: 30%;
   bottom: 0%;
 }
+
+.characterImg img {
+    height: 60vh;
+    width: auto;
+}
+
 .dialogBox {
   position: absolute;
-  top: 0%;
+  top: -220px;
   left: 0%;
-  cursor: pointer;
+  cursor: url("assets/curser.svg");
 }
 .dialogBox:after {
   content: '';

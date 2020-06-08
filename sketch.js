@@ -25,6 +25,9 @@ function setup() {
   dialogClicked();
 
   // choiceBox.hide();
+    var background = dialog.getString(n, 2);
+    var backgroundImg = "<style> body{background-image: url('assets/background/" + background + ".png');} </style>";
+    select(".backgroundImg").html(backgroundImg);
 }
 
 function dialogClicked() {
@@ -34,12 +37,10 @@ function dialogClicked() {
     document.getElementById("dialog").innerHTML = dialog.getString(n, 1);
     document.getElementById("character").innerHTML = dialog.getString(n, 0);
     var character = dialog.getString(n, 0);
-    var characterImg = '<img src="./assets/character/' + character + '.png" alt="' + character + '" height="100%" width="auto">';
+    var characterImg = '<img src="./assets/character/' + character + '.png" alt="' + character + '">';
     select(".characterImg").html(characterImg);
 
-    var background = dialog.getString(n, 2);
-    var backgroundImg = "<style> body{background-image: url('assets/background/" + background + ".png');} </style>";
-    select(".backgroundImg").html(backgroundImg);
+    
     n++;
   } else if (n == numLine) {
     print("make choice");
