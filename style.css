@@ -5,61 +5,47 @@
   font-weight: 400;
 }
 body, html {
-    height: 100vh;
+  height: 100vh;
   padding: 0;
   margin: 0;
-background-size: cover; 
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: SequentialistBB;
-    cursor: url("assets/curser.svg");
 }
-::-webkit-scrollbar {
-  width: 5px;
+body::-webkit-scrollbar {
+  display: none;
 }
-/* Track */ ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+body {
+  -ms-overflow-style: none;
 }
-/* Handle */ ::-webkit-scrollbar-thumb {
-  background: #888;
+.bg-image-1 {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -100;
+  background-image: url("assets/background/planets-01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-/* Handle on hover */ ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+.bg-image-2 {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -99;
+  background-image: url("assets/background/planets-02.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  visibility: hidden;
 }
-
-.splashScreen body {
-    overflow-y: scroll !important;
-}
-
-.splashScreen {
-    background-image: url("assets/background/planets-01.png");
-    background-size: cover;
-    background-repeat:no-repeat; 
-}
-
-.splashScreen .card {
-    background-color: rgba(0,0,0,0.6);
-}
-.splashScreen .card-header {
-    background-color: rgba(255,255,255,1);
-}
-.splashScreen .card-body {
-    background-color: rgba(255,255,255,1);
-}
-.splashScreen .card-footer {
-    background-color: rgba(255,255,255,1);
-}
-
 .characterContainer {
   position: absolute;
   right: 30%;
   bottom: 0%;
 }
-
 .characterImg img {
-    height: 60vh;
-    width: auto;
+  height: 60vh;
+  width: auto;
 }
-
 .dialogBox {
   position: absolute;
   top: -220px;
@@ -90,10 +76,174 @@ background-size: cover;
   left: 50%;
   top: 50%;
 }
-.choiceBox {
-  /* this is the style of the choice Box after dialog ends in this page*/
-  display: none;
+/*--------------------*/
+/*-----Start Page-----*/
+/*--------------------*/
+#scroller {
+  position: fixed;
+  right: 0%;
+  top: 50vh;
+  color: blue;
+  width: 100vw;
+  text-align: right;
+  padding-right: 10px;
+  z-index: 100;
 }
-.buttonChoice {
-  /* this is the style of the buttons in the choice Box */
+#scroller::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: blue;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.navbar {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 100;
+}
+.bg-gradient {
+  height: 100vh;
+  background: rgb(2, 0, 36);
+  background: -webkit-linear-gradient(rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 0) 100%);
+  background: -o-linear-gradient(rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 0) 100%);
+  background: linear-gradient(rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 0) 100%);
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 5vw;
+}
+#home a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+  padding-top: 80px;
+}
+#home a:hover {
+  opacity: .5;
+}
+#home a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: scroll-anim 2s infinite;
+  animation: scroll-anim 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+#home a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+#home a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+}
+#home a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+@-webkit-keyframes scroll-anim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes scroll-anim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.planet {
+  width: 20vh;
+  height: auto;
+  visibility: hidden;
+}
+a:hover img {
+  filter: drop-shadow(0px 0px 10px #fff);
+}
+path {
+  fill: none;
+  /* uncomment to display path 
+    stroke: red;
+    */
+}
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  height: 100vh;
+  width: 100vw;
+}
+.modal-content {
+  background-color: rgba(190, 202, 254, 0.9);
+}
+.planet-detail.modal-content {
+  background-color: rgba(0, 0, 0, 0.0);
+}
+.planet-detail .modal-header {
+  color: #fff;
+  background-color: rgba(0, 137, 190, 0.4);
+  border-bottom-color: rgba(0, 137, 190, 0.4);
+}
+.planet-detail .modal-body {
+  color: #fff;
+  background-color: rgba(0, 137, 190, 0.4);
+}
+.planet-detail .modal-footer {
+  background-color: rgba(0, 137, 190, 0.4);
+  border-top-color: rgba(0, 137, 190, 0.4);
+}
+.planet-detail button {
+  background-color: rgba(0, 137, 190, 0.6);
+  border-color: rgba(0, 137, 190, 0.39);
+}
+.planet-detail button:hover, .planet-detail button:active {
+  background-color: rgba(0, 137, 190, 1);
+  border-color: rgba(0, 137, 190, 1);
 }
