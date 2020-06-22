@@ -14,7 +14,7 @@
   <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link scrollTo" href="#trigger">Play</a>
+        <a class="nav-link" href="" data-toggle="modal" data-target="#modal-storyworld">Storyworld</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="" data-toggle="modal" data-target="#modal-about">About</a>
@@ -31,6 +31,8 @@
   <div class="bg-image-2">
   </div>
   <h1>Game Title</h1>
+    <h2>some description<br>
+    two or three lines.</h2>
   <a href="#trigger" class="scrollTo"><span></span><span></span><span></span>Start</a>
 </section>
 <!--
@@ -107,7 +109,7 @@ uncomment to display trigger
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Start</button>
+        <button onclick="window.location.href='intro.html';" type="button" class="btn btn-primary">Start Adventure</button>
       </div>
     </div>
   </div>
@@ -132,6 +134,21 @@ uncomment to display trigger
     <div class="modal-content planet-detail">
       <div class="modal-header">
         <h5 class="modal-title">Furnace</h5>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal-storyworld" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Storyworld</h5>
       </div>
       <div class="modal-body">
         ...
