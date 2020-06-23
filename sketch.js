@@ -48,12 +48,11 @@ function dialogClicked() {
     for (i = 1; i < choice.getRowCount(); i++) {
       var value = choice.getString(i, 1);
       var jump2where = choice.getString(i, 2);
-      var button = '</br><input type="button" class="buttonChoice btn btn-primary mb-5" value="' + value + '" onclick="window.location.href = ' + "'" + './' + jump2where + '.html' + "'" + '"/>';
+      var button = '</br><input type="button" class="buttonChoice btn btn-dark mb-3" value="' + value + '" onclick="window.location.href = ' + "'" + './' + jump2where + '.html' + "'" + '"/>';
       select(".choiceBox").html(button, true);
     }
-    select("#dialog").hide();
-    select("#character").hide();
-    select(".characterImg").hide();
+    select(".dialogBox").hide();
+
     n++;
   }
 }
