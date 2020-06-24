@@ -1,3 +1,5 @@
+https://dddddylan5050.github.io/COMPLEXARTIFACTSTUDIOMOCKUP-template/
+
 how to use template
 
 duplicate 1.1.html, 1.1choice.csv, 1.1dialoge.csv
