@@ -351,8 +351,9 @@ time {
 .characterImg {
   overflow: hidden;
   position: absolute;
-  bottom: -100vh;
+  bottom: 0px;
   right: 0px;
+  height: 100vh;
 }
 .characterImg img {
   position: relative;
