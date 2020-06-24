@@ -203,7 +203,7 @@ svg {
   width: 100vw;
 }
 .modal-content {
-  background-color: rgba(190, 202, 254, 0.9);
+  
 }
 .planet-detail.modal-content {
   background-color: rgba(0, 0, 0, 0.0);
@@ -368,7 +368,7 @@ time {
 }
 .dialogBox {
   cursor: pointer;
-  background-color: rgba(126, 255, 244, 0.85);
+  background-color: rgba(0, 137, 190, 0.4);
 }
 #dialog {
   height: 100px;
@@ -387,11 +387,11 @@ time {
   transform: translateX(-50%);
   width: 90%;
   display: none;
-  background-color: rgba(126, 255, 244, 0.85);
+  background-color: rgba(0, 137, 190, 0.4);
 }
 .choiceBox input {
   min-width: 400px;
 }
 .modal-content.modal-choice {
-  background-color: rgba(126, 255, 244, 0.85);
+  background-color: rgba(0, 137, 190, 0.4);
 }
