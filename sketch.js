@@ -25,9 +25,7 @@ function setup() {
   dialogClicked();
 
   // choiceBox.hide();
-    var background = dialog.getString(n, 2);
-    var backgroundImg = "<style> body{background-image: url('assets/background/" + background + ".png');} </style>";
-    select(".backgroundImg").html(backgroundImg);
+
 }
 
 function dialogClicked() {
@@ -40,6 +38,9 @@ function dialogClicked() {
     var characterImg = '<img src="./assets/character/' + character + '.png" alt="' + character + '">';
     select(".characterImg").html(characterImg);
 
+    var background = dialog.getString(n, 2);
+    var backgroundImg = "<style> body{background-image: url('assets/background/" + background + ".png');} </style>";
+    select(".backgroundImg").html(backgroundImg);
     
     n++;
   } else if (n == numLine) {
