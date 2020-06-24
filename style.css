@@ -368,7 +368,8 @@ time {
 }
 .dialogBox {
   cursor: pointer;
-  background-color: rgba(0, 137, 190, 0.4);
+  background-color: rgba(0, 137, 190, 0.8);
+    color: #fff;
 }
 #dialog {
   height: 100px;
@@ -387,7 +388,8 @@ time {
   transform: translateX(-50%);
   width: 90%;
   display: none;
-  background-color: rgba(0, 137, 190, 0.4);
+  background-color: rgba(0, 137, 190, 0.8);
+        color: #fff;
 }
 .choiceBox input {
   min-width: 400px;
