@@ -2,10 +2,10 @@
 "You","Dialing…","phonecall-01"
 "You","Hi! I'm Alex, and I would like to schedule a meeting with the President.
 ","phonecall-01-walton"
-"Ms. Walton","My dear, do you work for this government?
+"Walton","My dear, do you work for this government?
 ","phonecall-01-alex"
 "You","No!","phonecall-01-walton"
-"Ms. Walton","Do you know someone that works for this government?
+"Walton","Do you know someone that works for this government?
 ","phonecall-01-alex"
 "You","No. But I have a good idea that could change the life of the outer planet's population.","phonecall-01-walton"
-"Ms. Walton","We all do, my dear. Thank you!","phonecall-01-alex"
+"Walton","We all do, my dear. Thank you!","phonecall-01-alex"
