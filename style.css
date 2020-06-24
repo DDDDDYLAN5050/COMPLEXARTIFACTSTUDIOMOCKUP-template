@@ -356,7 +356,7 @@ time {
 }
 .characterImg img {
   position: relative;
-  top: 30vh;
+  bottom: 0px;
   height: 100vh;
   width: auto;
 }
